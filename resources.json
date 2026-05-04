@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Wood",
+    "location": "Kilima Valley",
+    "use": "Crafting furniture and tools"
+  },
+  {
+    "name": "Stone",
+    "location": "Caves",
+    "use": "Building upgrades"
+  },
+  {
+    "name": "Copper Ore",
+    "location": "Mining areas",
+    "use": "Tool upgrades"
+  }
+]

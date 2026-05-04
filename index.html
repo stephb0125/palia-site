@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palia Interactive Wiki</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>✨ Palia Interactive Wiki ✨</h1>
+  <p>Quests • Resources • Chains • Exploration</p>
+</header>
+
+<nav>
+  <button onclick="showTab('quests')">Quests</button>
+  <button onclick="showTab('resources')">Resources</button>
+</nav>
+
+<section class="filters">
+  <input type="text" id="search" placeholder="Search..." oninput="render()">
+
+  <select id="skillFilter" onchange="render()">
+    <option value="all">All Skills</option>
+    <option value="Main">Main</option>
+    <option value="Fishing">Fishing</option>
+    <option value="Mining">Mining</option>
+    <option value="Cooking">Cooking</option>
+  </select>
+
+  <select id="regionFilter" onchange="render()">
+    <option value="all">All Regions</option>
+    <option value="Kilima Valley">Kilima Valley</option>
+    <option value="Bahari Bay">Bahari Bay</option>
+  </select>
+</section>
+
+<main>
+  <div id="quests" class="tab active"></div>
+  <div id="resources" class="tab"></div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
